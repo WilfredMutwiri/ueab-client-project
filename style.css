@@ -1,0 +1,576 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(255, 255, 255);
+}
+/* the nav section */
+#nav{
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navBar{
+    width: 100%;
+    height: 85px;
+    padding: 16px;
+    background:rgb(2, 2, 138);
+}
+.navBar h2{
+    color: rgb(250, 213, 4);
+    font-size: 23px;
+}
+.navBar img{
+    width: 30px;
+    margin-left: 120px;
+    opacity: 0;
+    border-radius: 3px;
+
+}
+.navContainer ul{
+    display: flex;
+    height: 60px;
+}
+.navContainer ul li,.navContainer a{
+    list-style: none;
+    margin-top: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    margin-left: 20px;
+}
+.navContainer a:hover{
+    cursor: pointer;
+    color: rgb(235, 220, 13);
+}
+/* the home section */
+.homeHolder{
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 20px;
+    display: flex;
+    justify-content:space-around;
+    background: rgb(245, 243, 243);
+    padding-bottom: 50px;
+}
+#homeContent h1{
+    font-size: 37px;
+    line-height: 45px;
+    padding-bottom: 25px;
+}
+#homeContent p{
+    line-height: 26px;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+button{
+    height:40px;
+    width: 166px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+#btnHolder{
+    display: flex;
+}
+#CTA{
+    margin-right: 15px;
+    background:rgb(10, 14, 204);
+}
+#CTA a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+#cta2{
+    background: rgb(0, 0, 0);
+}
+#cta2 a{
+    text-decoration: none;
+    font: 14px;
+    color: rgb(255, 255, 255);
+}
+#cta2:hover,#CTA:hover{
+    background: rgb(219, 198, 7);
+    cursor: pointer;
+}
+.homeImage img{
+    border-radius: 10px;
+    margin-top: -40px;
+    margin-left: -20px;
+    width: 560px;
+}
+/*courses section */
+#courses{
+    width: 100%;
+    height: auto;
+    background:rgb(226, 226, 226);
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+#courses h2{
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#courses p{
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.coursesHolder{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#BBIT,#Software,#Networking{
+    width:300px;
+    height: auto;
+    padding: 15px;
+    border: 2px solid rgb(12, 12, 12);
+    margin: 30px;
+    border-radius: 10px;
+    background: rgb(230, 230, 230);
+    box-shadow: 0 0 15px rgb(61, 61, 61);
+}
+#BBIT:hover,#Software:hover,#Networking:hover{
+    color: rgb(243, 241, 241);
+    background: rgb(12, 12, 12);
+}
+#BBIT h3,#Software h3,#Networking h3{
+    padding: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+#BBIT p,#Software p,#Networking p{
+    line-height: 25px;
+}
+#BBIT a,#Software a,#Networking a{
+    text-decoration: none;
+    color: rgb(17, 38, 230);
+    text-align: center;
+}
+#BBIT a:hover,#Software a:hover,#Networking a:hover{
+    cursor: pointer;
+    color: rgb(233, 229, 13);
+}
+#BBIT img,#Software img,#Networking img{
+    width: 100px;
+    border-radius:100px;
+    margin-left: 80px;
+    padding: 10px;
+    object-fit:cover;
+}
+/* the about section */
+#aboutHolder{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background: rgb(236, 236, 236);
+    padding-bottom: 100px;
+    padding: 100px;
+}
+#aboutContent{
+    height: auto;
+    width: 500px;
+    padding: 20px;
+}
+#aboutContent h2{
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#aboutContent p{
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+#aboutImages img{
+    width: 410px;
+    border-radius:10px;
+    margin-right: 110px;
+    margin-top: 50px;
+}
+/*moreInfo section */
+#moreInfoHolder{
+    max-width: 100%;
+}
+.MoreInfo{
+    padding: 20px;
+    max-width:90%;
+    height:auto;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background:rgb(251, 253, 253);
+
+}
+.MoreInfo h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color:rgb(221, 208, 19);
+}
+#moreAboutInfo,#bbit,#software,#networking{
+    line-height:30px;
+    font-size: 17px;
+}
+#bbitContent,#softwareContent,#networkingContent{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+#bbitContent img,#softwareContent img,#networkingContent img{
+border-radius: 20px;
+object-fit: cover;
+width: 500px;
+margin-right: 20px;
+}
+#bbit ul,#software ul,#networking ul{
+    list-style: none;
+    color: rgb(64, 64, 240);
+    padding: 20px;
+}
+/* testimonial section */
+#testimonialHolder{
+    padding: 40px;
+    padding-top: 100px;
+    background: rgb(224, 224, 224);
+    width: 100%;
+}
+#testimonialHolder h2,#testimonialHolder p{
+    padding-bottom: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-left: 40px;
+}
+#testimonial{
+    background: rgb(255, 255, 255);
+    width: 550px;
+    padding: 20px;
+    margin: 0 auto;
+    height: 240px;
+    border-radius: 10px;
+}
+#testimonial h4{
+    color: rgb(36, 173, 36);
+}
+#testimonial span{
+    color:rgb(223, 21, 21);
+}
+#testimonial p{
+    font-size: 17px;
+    padding-top: 20px;
+}
+#image{
+    background:green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+#Tbtns{
+    width: 100%;
+    margin-left: 170px;
+}
+#testimonial button{
+    border-radius:3px;
+    width: 50px;
+    height:35px;
+    background:rgb(10, 10, 10);
+    font-size: 20px; 
+    color:rgb(250, 245, 245);
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+}
+#testimonial button:hover{
+    color: rgb(250, 9, 9);
+}
+/* team section */
+#leaderHolder{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#leaderHolder h2,#p1{
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+#leader{
+    margin: 0 auto;
+    margin-top: 20px;
+    width:400px;
+    height:auto;
+    background: #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(12, 12, 12);
+}
+#leader h4,#leader p{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#leader p{
+    font-size: 16px;
+}
+#leader img{
+    width: 400px;
+    height: 500px;
+    object-fit:contain;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius:20%;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+#img1 img,#img2 img,#img3 img,#img4 img{
+    width: 30px;
+    height: auto;
+}
+/* contacts section */
+#contactsHolder{
+    background:rgb(252, 251, 251) ;
+    width: 100%;
+    height: auto;
+    padding:50px;
+}
+#contacts{
+    padding-top: 100px;
+    display: flex;
+    max-width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+}
+#ContactImg img{
+border-radius: 20px;
+margin-right: 50px;
+width: 500px;
+height: 600px;
+object-fit:contain;
+}
+#contanctForm{
+margin-top: 20px;
+font-size: 18px;
+width: 500px;
+padding: 20px;
+}
+#contanctForm p{
+    line-height: 28px;
+    text-align: center;
+}
+#contanctForm h4{
+    padding-left: 20px;
+    color: rgb(18, 63, 211);
+    padding:10px;
+}
+#contanctForm form{
+    padding-left: 20px;
+}
+form input{
+    width: 90%;
+    padding: 11px;
+    margin-bottom: 20px;
+}
+#text{
+    max-width: auto;
+    height: 100px;
+    padding: 11;
+}
+#contanctForm button{
+    border-radius: 10px;
+    margin-left: 20px;
+    border: none;
+    font-size: 16px;
+    background:rgb(18, 53, 211);
+    cursor: pointer;
+}
+#contanctForm button:hover{
+    background: rgb(231, 197, 5);
+
+
+}
+/* footer section */
+#footerHolder{
+    width: 100%;
+    height: auto;
+    background: rgb(10, 10, 10);
+    color: rgb(252, 249, 249);
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.footerContent{
+display: flex;
+justify-content: space-between;
+}
+#info{
+    width: 590px;
+}
+#info h4{
+    font-size: 20px;
+    padding-bottom: 13px;
+    color: rgb(233, 201, 19);
+    font-weight: bold;
+}
+#info p{
+    line-height: 25px;
+}
+#links ul{
+list-style: none;
+}
+#links ul li a{
+    text-decoration: none;
+    line-height: 24px;
+    color:rgb(16, 107, 212);
+}
+#links ul li a:hover{
+    color: rgb(233, 219, 15);
+}
+#links span{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(233, 200, 15);
+}
+#subscribe h4{
+    font-size: 19px;
+    padding-bottom: 15px;
+
+}
+#subscribe input{
+    padding: 10px;
+    width: 330px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    border: none;
+}
+.subscribeInput{
+    display: flex;
+}
+.subscribeInput button{
+    padding: 9px;
+    border-radius: 20px;
+    background: rgb(240, 224, 4);
+    border: none;
+    margin-left:-60px;
+    height: 35px;
+    width: 100px;
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+}
+.ISCIcons{
+    display: flex;
+}
+#Gimg1 img,#Gimg2 img,#Gimg3 img,#Gimg4 img{
+    width: 30px;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.reveal{
+    position:relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2000ms ease;
+}
+.reveal.active{
+    transform: translateX(0px);
+    opacity: 1;
+
+}
+/* media queries */
+@media(max-width:600px){
+    /* nav section */
+    .navBar{
+        background: rgb(10, 10, 10);
+        width: 100%;
+    }
+    .navBar h2{
+        font-size: 18px;
+    }
+    .navContainer{
+        height:200px;
+        background: rgb(10, 10, 10);
+        opacity: 0;
+    }
+    .navContainer ul{
+        display: inline-block;
+
+    }
+    .navContainer ul li a{
+        color: rgb(255, 255, 255);
+        background: rgb(10, 10, 10);
+        padding-bottom: 10px;
+    }
+    /* home section */
+    .homeHolder{
+        margin-top:0px;
+        padding-top: 30px;
+        max-width:100%;
+    }
+    .homeImage{
+        opacity: 0;
+        margin-left: -300px;
+    }
+    .homeImage img{
+        width:230px;
+        margin-top: 70px;
+        margin-left:0px;
+        opacity:0.6;
+    }
+    .navBar img{
+        opacity: 1;
+    }
+   #homeHolder{
+    display:flex;
+    max-width: 100%;
+   }
+    #homeContent h1{
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 100%;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+     #homeContent p{
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height:auto;
+        position:absolute;
+        font-weight: 549;
+        margin-left: -30px;
+}
+#btnHolder{
+    display: flex;
+}
+#homeContent button{
+    margin-top: 200px;
+    width: 120px;
+}
+}
